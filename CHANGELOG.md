@@ -5,6 +5,30 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0/).
 
+## [1.9.0](https://github.com/shazib-summar/temporal-worker-controller/compare/v1.8.1...v1.9.0) - 2026-08-03
+
+### Features
+
+- **helm:** configure kube-rbac-proxy sidecar ([#468](https://github.com/shazib-summar/temporal-worker-controller/pull/468)) ([`f3bc2ad`](https://github.com/shazib-summar/temporal-worker-controller/commit/f3bc2ad95b4a73e95dea2fc0e43f741e9b05c68a))
+
+### Bug Fixes
+
+- **clientpool:** attach namespace header to every request ([#467](https://github.com/shazib-summar/temporal-worker-controller/pull/467)) ([`921e5b4`](https://github.com/shazib-summar/temporal-worker-controller/commit/921e5b4413cd7b7ffbfae1a0db881d5d53423475))
+
+### Other Changes
+
+- Added automated changelog workflow ([`0b93132`](https://github.com/shazib-summar/temporal-worker-controller/commit/0b93132aa8db27995ed2425fddf99794da1d4b47))
+- uplift temporal core deps ([#490](https://github.com/shazib-summar/temporal-worker-controller/pull/490)) ([`3e83925`](https://github.com/shazib-summar/temporal-worker-controller/commit/3e839257ba27a219b32cc472447504a48571718b))
+- Bump chart version to 0.27.1 [skip ci] ([`4fd32c8`](https://github.com/shazib-summar/temporal-worker-controller/commit/4fd32c8e07b4976188221ed9104304542c9395b7))
+- Bump google.golang.org/grpc in / ([#487](https://github.com/shazib-summar/temporal-worker-controller/pull/487)) ([`d503182`](https://github.com/shazib-summar/temporal-worker-controller/commit/d5031824b9266b9244e0b5877f811a3b48308e79))
+- tell dependabot to ignore cert-manager dep in Helm ([#489](https://github.com/shazib-summar/temporal-worker-controller/pull/489)) ([`6c5de89`](https://github.com/shazib-summar/temporal-worker-controller/commit/6c5de8975f309143608fd8e5a67bd222afffe2e6))
+- Bump actions/setup-go from 6.5.0 to 7.0.0 ([#483](https://github.com/shazib-summar/temporal-worker-controller/pull/483)) ([`36eb96a`](https://github.com/shazib-summar/temporal-worker-controller/commit/36eb96a547b6adf9d7a1d985fee12f2b656f1a5d))
+- Bump k8s.io/api in / ([#488](https://github.com/shazib-summar/temporal-worker-controller/pull/488)) ([`220117d`](https://github.com/shazib-summar/temporal-worker-controller/commit/220117df5e1701c91e69d4829e5aaa84ac9e0632))
+- uplift temporal core dependencies ([#480](https://github.com/shazib-summar/temporal-worker-controller/pull/480)) ([`01a92a0`](https://github.com/shazib-summar/temporal-worker-controller/commit/01a92a0410bbedf353030fcc5a686d00916ea417))
+- Bump google.golang.org/grpc in / ([#455](https://github.com/shazib-summar/temporal-worker-controller/pull/455)) ([`3f32da9`](https://github.com/shazib-summar/temporal-worker-controller/commit/3f32da98bf46865da27e82ddecbf3daf201fd89c))
+- Bump docker/login-action from 4.3.0 to 4.4.0 ([#454](https://github.com/shazib-summar/temporal-worker-controller/pull/454)) ([`c21a844`](https://github.com/shazib-summar/temporal-worker-controller/commit/c21a8447bc64b024806203a95cdf899441e95c8e))
+- add Eniko Dif to CODEOWNERS ([#464](https://github.com/shazib-summar/temporal-worker-controller/pull/464)) ([`01f3d9c`](https://github.com/shazib-summar/temporal-worker-controller/commit/01f3d9ca2a76deb85818362ae15c8aa45a177abd))
+
 ## [1.9.1](https://github.com/shazib-summar/temporal-worker-controller/compare/v1.9.0...v1.9.1) - 2026-08-03
 
 ### Chores

@@ -13,12 +13,12 @@ Temporal's [Worker Versioning](https://docs.temporal.io/production-deployment/wo
 
 ## What does it do?
 
-🔒 **Protected [Pinned](https://docs.temporal.io/worker-versioning#pinned) workflows** - Workflows pinned to a version stay on that version and won't break  
-🎚️ **Controlled rollout for [AutoUpgrade](https://docs.temporal.io/worker-versioning#auto-upgrade) workflows** - AutoUpgrade workflows shifted to new versions with configurable safety controls  
-📦 **Automatic version management** - Registers versions with Temporal, manages routing rules, and tracks version lifecycle  
-🎯 **Smart traffic routing** - New workflows automatically get routed to your target worker version  
-🛡️ **Progressive rollouts** - Catch incompatible changes early with small traffic percentages before they spread  
-⚡ **Easy rollbacks** - Instantly route traffic back to a previous version if issues are detected  
+🔒 **Protected [Pinned](https://docs.temporal.io/worker-versioning#pinned) workflows** - Workflows pinned to a version stay on that version and won't break
+🎚️ **Controlled rollout for [AutoUpgrade](https://docs.temporal.io/worker-versioning#auto-upgrade) workflows** - AutoUpgrade workflows shifted to new versions with configurable safety controls
+📦 **Automatic version management** - Registers versions with Temporal, manages routing rules, and tracks version lifecycle
+🎯 **Smart traffic routing** - New workflows automatically get routed to your target worker version
+🛡️ **Progressive rollouts** - Catch incompatible changes early with small traffic percentages before they spread
+⚡ **Easy rollbacks** - Instantly route traffic back to a previous version if issues are detected
 📈 **Per-version autoscaling** - Attach HPAs or other custom scalers to each versioned Deployment via [`WorkerResourceTemplate`](docs/worker-resource-templates.md)
 
 ## Quick Example
@@ -65,7 +65,7 @@ spec:
 
 When you update the image, the controller automatically:
 1. 🆕 Creates a new deployment with your updated worker
-2. 📊 Gradually routes new workflows and AutoUpgrade workflows to the new version  
+2. 📊 Gradually routes new workflows and AutoUpgrade workflows to the new version
 3. 🔒 Keeps Pinned workflows running on their original version (guaranteed safety)
 4. 🧹 Automatically scales down and cleans up old versions once they are [drained](https://docs.temporal.io/production-deployment/worker-deployments/worker-versioning#sunsetting-an-old-deployment-version)
 
@@ -128,7 +128,7 @@ See [docs/crd-management.md](docs/crd-management.md) for upgrade, rollback, and 
 While Temporal's [Worker Versioning](https://docs.temporal.io/production-deployment/worker-deployments/worker-versioning) feature solves deployment safety problems, using it manually requires:
 
 - **Manual API calls** - Register versions, manage routing rules, track version states
-- **Infrastructure coordination** - Deploy multiple Kubernetes resources for each version  
+- **Infrastructure coordination** - Deploy multiple Kubernetes resources for each version
 - **Lifecycle monitoring** - Watch for drained versions and clean up resources
 - **Rollout orchestration** - Manually control progressive traffic shifting
 
@@ -137,7 +137,7 @@ While Temporal's [Worker Versioning](https://docs.temporal.io/production-deploym
 The Temporal Worker Controller eliminates this operational overhead by automating the entire Worker Versioning lifecycle on Kubernetes:
 
 - **Automatic Temporal integration** - Registers versions and manages routing without manual API calls
-- **Kubernetes-native workflow** - Update a single custom resource, get full [rainbow deployments](https://docs.temporal.io/production-deployment/worker-deployments/worker-versioning#deployment-systems)  
+- **Kubernetes-native workflow** - Update a single custom resource, get full [rainbow deployments](https://docs.temporal.io/production-deployment/worker-deployments/worker-versioning#deployment-systems)
 - **Intelligent cleanup** - Monitors version [drainage](https://docs.temporal.io/production-deployment/worker-deployments/worker-versioning#sunsetting-an-old-deployment-version) and automatically removes unused resources
 - **Built-in rollout strategies** - Progressive, AllAtOnce, and Manual with configurable safety controls
 
@@ -162,7 +162,7 @@ Your workers need these environment variables (automatically set by the controll
 
 ```bash
 TEMPORAL_ADDRESS=your-temporal-server:7233
-TEMPORAL_NAMESPACE=your-namespace  
+TEMPORAL_NAMESPACE=your-namespace
 TEMPORAL_DEPLOYMENT_NAME=my-worker        # Unique worker deployment name
 TEMPORAL_WORKER_BUILD_ID=v1.2.3          # Version identifier
 ```
@@ -191,3 +191,6 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 **Questions?** Reach out to [@jlegrone](https://github.com/jlegrone) or the [#safe-deploys](https://temporalio.slack.com/archives/C07MDJ6S3HP) channel on Temporal Slack!
+
+
+dummy change apple foobar banana mangosteen durian

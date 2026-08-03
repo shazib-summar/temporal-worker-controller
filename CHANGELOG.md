@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0/).
 
+## [1.9.1](https://github.com/shazib-summar/temporal-worker-controller/compare/v1.9.0...v1.9.1) - 2026-08-03
+
+### Chores
+
+- undo dummy change ([`545311d`](https://github.com/shazib-summar/temporal-worker-controller/commit/545311db6b13c343eb3c5cf7387a15bbc43dc87b))
+- some dummy change to test changelog workflow ([`ea2b8a0`](https://github.com/shazib-summar/temporal-worker-controller/commit/ea2b8a0e3a8cfe0c01031fd36514bf7e859236c6))
+
 ## [1.8.1](https://github.com/shazib-summar/temporal-worker-controller/compare/v1.8.0...v1.8.1) - 2026-07-30
 
 ### Features
